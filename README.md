@@ -1,38 +1,38 @@
-# Saladict 沙拉查词
+## TODOs
+- [X] Remove English-Chinese dictionaries and Japanese dictionaries at `./src/components/dictionaries
+  - To recover: copy from `dev` branch, [tutorial](https://stackoverflow.com/questions/307579/how-do-i-copy-a-version-of-a-single-file-from-one-git-branch-to-another)
 
-[![Version](https://img.shields.io/github/release/crimx/ext-saladict.svg?label=version)](https://github.com/crimx/ext-saladict/releases)
-[![Chrome Web Store](https://badgen.net/chrome-web-store/users/cdonnmffkdaoajfknoeeecmchibpmkmg?icon=chrome&color=0f9d58)](https://chrome.google.com/webstore/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=en)
-[![Chrome Web Store](https://badgen.net/chrome-web-store/stars/cdonnmffkdaoajfknoeeecmchibpmkmg?icon=chrome&color=0f9d58)](https://chrome.google.com/webstore/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=en)
-[![Mozilla Add-on](https://badgen.net/amo/users/ext-saladict?icon=firefox&color=ff9500)](https://addons.mozilla.org/firefox/addon/ext-saladict/)
-[![Mozilla Add-on](https://badgen.net/amo/stars/ext-saladict?icon=firefox&color=ff9500)](https://addons.mozilla.org/firefox/addon/ext-saladict/)
+- [ ] Refer to the [contributing guide](./CONTRIBUTING.md) and add the following dictionaries:
+1. Omorfi
+  - Consider feeding dictionary form to other dicts?
+    - Or a better morphology analyzer/database?
+1. FinnWordNet
+1. Finnish Wikidictionary
+1. Kotus Kielitoimistonsanakirja
+1. Sanakirja.fi
+1. Sanakirja.org
+1. `Cooljugator` or another inflection dictionary
+1. Urbaanisanakirja.com
+1. ???
+- [ ] Modify translation engines
+  - [ ] Consider Sanakirja.fi?
+- [ ] Add spellchecker support?
+  - [ ] Consider Sanakirja.fi?
 
+- [ ] Learn basics of software development including the following from Saladict author
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?maxAge=2592000)](http://commitizen.github.io/cz-cli/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-brightgreen.svg?maxAge=2592000)](https://conventionalcommits.org)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?maxAge=2592000)](https://standardjs.com/)
 [![License](https://img.shields.io/github/license/crimx/ext-saladict.svg?colorB=44cc11?maxAge=2592000)](https://github.com/crimx/ext-saladict/blob/dev/LICENSE)
+- [ ] Migrate to [Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)
 
-Chrome/Firefox WebExtension. Feature-rich inline translator with PDF support.
+### Optional TODOs
+- [ ] Make a Mac version?
+  - WHat does `./mac-app' do?
+- [ ] i18n: Add Finnish locale?
+- [ ] A new logo?
 
-[【中文说明】](./README-zh.md)Chrome/Firefox 浏览器插件，网页划词翻译。
-
-<p align="center">
-  <a href="https://github.com/crimx/ext-saladict/releases/" target="_blank"><img src="https://raw.githubusercontent.com/wiki/crimx/ext-saladict/images/notebook.gif" /></a>
-</p>
-
-## Downloads
-
-- [Chrome Web Store](https://chrome.google.com/webstore/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=en)
-- [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/ext-saladict/)
-- [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/idghocbbahafpfhjnfhpbfbmpegphmmp)(Uploaded by @rumosky)
-- See [releases](https://github.com/crimx/ext-saladict/releases) for more.
-
-Saladict 7 is a complete rewrite with sophisticated interaction and buttery smooth experience. Built for speed, stability and customization.
-
-## Change Log
-
-[CHANGELOG.md](./CHANGELOG.md)
-
-## build from source
+## From Saladict author: build from source
 
 ```bash
 git clone git@github.com:crimx/ext-saladict.git
@@ -49,15 +49,10 @@ yarn build
 
 Artifacts can be found in `build/`.
 
-## Development
+## Notes from Saladict author
+Saladict 7 is a complete rewrite with sophisticated interaction and buttery smooth experience. Built for speed, stability and customization.
 
-See the [contributing guide](./CONTRIBUTING.md).
-
-## How can I contribute?
-
-[CONTRIBUTING.md](./CONTRIBUTING.md)
-
-## Notice
+Chrome/Firefox WebExtension. Feature-rich inline translator with PDF support.
 
 Saladict is a free and open-sourced project for study purpose only. Anyone can obtain a copy of Saladict free of charge. If you believe your legal rights have been violated please contact the [author](https://github.com/crimx) immediately.
 
@@ -66,17 +61,3 @@ Saladict is licensed under [MIT](https://github.com/crimx/ext-saladict/blob/dev/
 DO NOT use Saladict for any illegal or criminal activity. Saladict strongly condemns this behavior and will cooperate to the fullest extent possible in holding it accountable.
 
 As for copy-and-paste clone products Saladict has the responsibility to send corresponding reports and warnings to platforms and users.
-
-## More screenshots:
-
-<p align="center">
-  <a href="https://github.com/crimx/ext-saladict/releases/" target="_blank"><img src="https://github.com/crimx/ext-saladict/wiki/images/youdao-page.gif" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/crimx/ext-saladict/releases/" target="_blank"><img src="https://github.com/crimx/ext-saladict/wiki/images/screen-notebook.png" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/crimx/ext-saladict/releases/" target="_blank"><img src="https://github.com/crimx/ext-saladict/wiki/images/pin.gif" /></a>
-</p>
